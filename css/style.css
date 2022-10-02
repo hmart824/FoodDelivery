@@ -1,0 +1,211 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* CSS Variables */
+  
+  /* Navigation Bar */
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  /* Navigation Bar: Logo and Image */
+  #logo {
+    margin-top: 3px;
+  }
+  
+  #logo img {
+    height: 56px;
+    margin: 2px 18px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+  }
+  
+  /* Navigation Bar: List Styling */
+  #navbar ul {
+    display: flex;
+  }
+  #navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 16px;
+    border-radius: 13px;
+    text-decoration: none;
+  }
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  /* Home section */
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+  #home::before {
+    content: "";
+    position: absolute;
+    background: url('https://eatdrinkrabbit.com/wp-content/uploads/2020/07/rice.jpg') no-repeat center center/cover;
+    height: 541px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  #home h1 {
+    margin-top: 89px;
+    color: black;
+    text-align: center;
+  }
+  #home p {
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  /* Services Section */
+  
+  #services {
+    margin: 4px;
+    display: flex;
+  }
+  #services .box {
+    border: 2px solid rgb(0, 255, 21);
+    padding: 16px;
+    margin: 2px 4px;
+    border-radius: 23px;
+    background-color: rgb(234 237 239);
+    margin-bottom: 25px;
+  }
+  #services .box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    mix-blend-mode: multiply;
+    
+  }
+  
+  /* Clients-section */
+  #client-section {
+    margin-top: 22px;
+    position: relative;
+    /* height: 252px; */
+  }
+  
+  #client-section::before {
+    content: "";
+    position: absolute;
+    background: url('https://lh3.googleusercontent.com/2a33CI6mLr4dtD4uHgwpjkofl_w2s-ZuCnF6er9luMA9k2FaItjM1otTaWLgvfBsx2Ulsg=s128') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .29;
+  }
+  #clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #clients img {
+    height: 73px;
+  }
+  .client-item {
+    padding: 23px;
+    padding-bottom: 38px;
+  }
+  .client-item img {
+    mix-blend-mode: multiply;
+   
+  }
+  /* Contact section */
+  #contact {
+    /* margin-bottom: 34px; */
+    position: relative;
+    height: 397px;
+    padding-bottom: 34px;
+  }
+  #contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://ik.imagekit.io/mepl/wp-content/uploads/2018/08/Contact-us.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  #contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact-box form {
+    width: 40%;
+  }
+  #contact-box label {
+    font-size: 1rem;
+  }
+  #contact-box input,
+  #contact-box textarea {
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 6px;
+  }
+  /* Footer section */
+  footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+  }
+  
+  /* Utility classes */
+  .h-primary {
+    font-size: 2.3rem;
+    padding: 19px;
+  }
+  .h-secondary {
+    font-size: 1.8rem;
+    padding: 19px;
+  }
+  .btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 15px;
+    font-size: 0.8rem;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .center {
+    text-align: center;
+  }
+  
